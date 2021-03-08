@@ -1,4 +1,4 @@
-package grouping.db
+package grouping
 
 import org.jetbrains.exposed.sql.Table
 

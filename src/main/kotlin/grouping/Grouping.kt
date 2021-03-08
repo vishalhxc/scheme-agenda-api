@@ -1,7 +1,5 @@
 package grouping
 
-import grouping.db.GroupingTable
-import kotlinx.serialization.Contextual
 import kotlinx.serialization.Serializable
 import org.jetbrains.exposed.sql.*
 import org.jetbrains.exposed.sql.transactions.transaction
