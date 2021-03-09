@@ -2,12 +2,11 @@ package grouping
 
 import error.AgendaError
 import error.ErrorMessage
-import io.ktor.features.*
 import io.ktor.http.*
 import kotlinx.serialization.Serializable
 import org.jetbrains.exposed.sql.*
 import org.jetbrains.exposed.sql.transactions.transaction
-import utilities.UUIDSerializer
+import serialization.UUIDSerializer
 import java.util.*
 
 @Serializable

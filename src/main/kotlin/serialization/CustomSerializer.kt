@@ -1,4 +1,4 @@
-package utilities
+package serialization
 
 import error.ErrorMessage
 import io.ktor.http.*

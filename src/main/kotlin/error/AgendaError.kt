@@ -2,7 +2,7 @@ package error
 
 import io.ktor.http.*
 import kotlinx.serialization.Serializable
-import utilities.HttpStatusCodeSerializer
+import serialization.HttpStatusCodeSerializer
 
 @Serializable
 data class AgendaError(
