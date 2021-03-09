@@ -1,3 +1,4 @@
+import error.handleErrors
 import grouping.groupingRoute
 import io.ktor.application.*
 import io.ktor.client.*
@@ -15,6 +16,7 @@ fun main(args: Array<String>): Unit = io.ktor.server.netty.EngineMain.main(args)
 fun Application.install() {
     HttpClient(CIO) { install(JsonFeature) { serializer = KotlinxSerializer() } }
     install(ContentNegotiation) { register(ContentType.Application.Json, SerializationConverter(DefaultJson)) }
+    install(StatusPages) { handleErrors() }
 }
 
 fun Application.routes() = routing {
